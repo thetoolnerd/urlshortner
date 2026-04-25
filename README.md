@@ -68,7 +68,7 @@ Since your GitHub repo is already connected in Railway:
 
 1. In Railway project, create a **PostgreSQL** service.
 2. In your app service variables, set:
-   - `DATABASE_URL` = your PostgreSQL connection string
+   - `DATABASE_URL` = your PostgreSQL connection string (Railway `postgres://...` is supported)
    - `APP_BASE_URL` = your public Railway URL (optional but recommended)
 3. Push this repo; Railway will build and run using `Procfile`:
    - `web: uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}`
